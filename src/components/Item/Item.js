@@ -1,6 +1,17 @@
-const Item = ({nombre})=> {
+import './Item.css';
+import {Link} from 'react-router-dom'
+
+const Item = ({nombre, img, id})=> {
     return(
-        <li>{nombre}</li>
+        <>
+            <li className="card">
+                {nombre}
+                <img src={img}/>
+                <Link to={`/detail/${id}`}>Comprar</Link>
+            </li>
+            
+            
+        </>
     )
 }
 
