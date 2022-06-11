@@ -1,5 +1,6 @@
 import './NavBar.css';
 import {Link} from 'react-router-dom'
+import CartWidget from '../CartWidget/CartWidget';
 const NavBar = ()=>{
     return(
         <div className=''>
@@ -11,6 +12,7 @@ const NavBar = ()=>{
                 <button className="Button-Config">Mis Pedidos</button>
                 <button className="Button-Config">Descuentos</button>
                 <button className="Button-Config">Ayuda</button>
+                <CartWidget/>
             </nav>
         </div>
     )
